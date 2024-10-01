@@ -1,53 +1,70 @@
 ---
-import Card from "./ui/Card.astro";
-import { Icon } from "astro-icon/components";
+import Card from './ui/Card.astro';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
-  title: string;
-  description: string;
-  image: string;
-  company: string;
-  techIcons: string[];
+    title: string;
+    description: string;
+    image: string;
+    company: string;
+    techIcons: string[];
 }
 
 const { title, description, company, image, techIcons } = Astro.props;
 ---
-
 <Card title={title} description={description} image={image} subtitle={company}>
-  <div class="tech-icons">
-    {
-      techIcons.map((icon) => (
-        <div class="icon-wrapper">
-          <span class="tooltip">{icon}</span>
-          <Icon name={icon.toLowerCase()} />
-        </div>
-      ))
-    }
-  </div>
+    <div class="tech-icons">
+        {techIcons.map((icon) => (
+            <div class="icon-wrapper">
+                <span class="tooltip">{icon}</span>
+                <Icon name={icon.toLowerCase()} />
+            </div>
+        ))}
+    </div>
 </Card>
 <style>
-  .tech-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 0.5rem;
-    margin: 0.75rem 0.5rem;
-  }
+    .tech-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 0.5rem;
+        margin: 0.75rem 0.5rem;
+    }
 
-  .icon-wrapper {
-    padding: 0.5rem;
-    background-color: #f0f0f0;
-    border-radius: 0.25rem;
-    position: relative;
-  }
+    .icon-wrapper {
+        padding: 0.5rem;
+        background-color: #f0f0f0;
+        border-radius: 0.25rem;
+        position: relative;
+    }
 
-  .icon-wrapper:hover {
-    background-color: #e0e0e0;
-  }
+    .icon-wrapper:hover {
+        background-color: #e0e0e0;
+    }
 
-  .tech-icons svg {
-    vertical-align: middle;
-    min-width: 27px;
-    min-height: 27px;
-  }
+    .tech-icons svg {
+        vertical-align: middle;
+        min-width: 27px;
+        min-height: 27px;
+    }
+
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        font-size: 0.75rem;
+        z-index: 1;
+        width: 75px;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icon-wrapper:hover .tooltip {
+        display: block;
+    }
 </style>
