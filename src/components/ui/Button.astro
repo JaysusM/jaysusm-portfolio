@@ -1,0 +1,40 @@
+---
+interface Props {
+  colorSchema?: "primary" | "secondary";
+}
+
+const { colorSchema = "primary" } = Astro.props;
+---
+
+<button class=`button btn-${colorSchema}`>
+  <slot />
+</button>
+<style>
+  .button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+  }
+  .btn-secondary {
+    background-color: var(--accent);
+    color: var(--main);
+    border: 2px solid var(--main);
+  }
+  .btn-primary {
+    background-color: var(--main);
+    color: var(--accent);
+    border: 1px solid var(--accent-light);
+  }
+  .button:hover {
+    filter: brightness(1.1);
+  }
+  .button:active {
+    filter: brightness(0.9);
+  }
+</style>

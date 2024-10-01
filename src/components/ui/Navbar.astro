@@ -1,0 +1,88 @@
+---
+import SideNavbar from "./SideNavbar.astro";
+import Button from "./Button.astro";
+import Title from "./Title.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<div class="sidebar-container">
+  <SideNavbar>
+    <div class="close-button"><Button><Icon name="close" /></Button></div>
+  </SideNavbar>
+</div>
+<div class="topbar-container">
+  <Title />
+  <div class="menu-button"><Button><Icon name="hamburger" /></Button></div>
+</div>
+<style>
+  .sidebar-container {
+    display: block;
+  }
+
+  .topbar-container {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.7rem 1rem;
+  }
+
+  .topbar-container > .menu-button {
+    margin-left: auto;
+  }
+
+  .close-button {
+    display: none;
+  }
+
+  @media (width <= 900px) {
+    .sidebar-container {
+      position: fixed;
+      top: 0;
+      right: -100vw;
+      width: min(600px, 100vw);
+      height: 100vh;
+      background: var(--main);
+      transition: right 0.3s;
+      z-index: 1000;
+      box-shadow: 0 0 19px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar-container .title {
+      display: none;
+    }
+
+    html.dark .sidebar-container {
+      border-left: 1px solid var(--accent-light);
+      box-shadow: 0 0 19px 9px rgb(255 255 255 / 23%);
+    }
+
+    .topbar-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .close-button {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+  }
+</style>
+<script is:inline>
+  const button = document.querySelector(".menu-button > button");
+  const sidebar = document.querySelector(".sidebar-container");
+  const closeButton = document.querySelector(
+    ".sidebar-container .close-button",
+  );
+
+  button.addEventListener("click", () => {
+    sidebar.style.right = sidebar.style.right === "0vw" ? "-100vw" : "0vw";
+  });
+
+  closeButton.addEventListener("click", () => {
+    sidebar.style.right = "-100vw";
+  });
+</script>

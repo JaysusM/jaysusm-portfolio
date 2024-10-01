@@ -1,6 +1,12 @@
 {
-    "name": "Jesús Martín",
+  "name": "Jesús Martín",
+  "email": "jmartinruiz26@gmail.com",
+  "github": "jaysusm",
+  "mainDescription": "I'm a full-stack Software Engineer based in Spain.",
+  "about": "I'm a graduated <b>Software Engineer</b> with over four years of experience. I'm passionate about <b>Full-Stack Development</b>, <b>DevOps</b>, and <b>Cloud Infrastructure</b>. Based in Málaga, Spain, I thrive on creating and maintaining dynamic applications. I love exploring new technologies and am committed to delivering high-quality code.\n\nOn the backend, I specialize in <b>Node.js</b> with <b>Express.js</b> for event-driven applications and have extensive experience with <b>RabbitMQ</b> for event-driven architectures to boost performance.\n\nOn the frontend, I focus on <b>React</b> for dynamic UIs and <b>Next.js</b> for server-side rendering and static sites. I’ve also worked with <b>Angular</b> and prefer <b>Tailwind CSS</b> for fast, responsive designs.\n\nIn DevOps, I can work on tasks such as automating and preparing deployments. I deploy with <b>Kubernetes</b>, manage infrastructure with <b>Terraform</b>, and set up CI/CD processes. I deploy frontend apps with <b>Vercel</b> and manage cloud resources with <b>AWS</b>.",
+  "socials": {
+    "linkedin": "/in/jesusm26",
     "email": "jmartinruiz26@gmail.com",
-    "github": "jaysusm",
-    "mainDescription": "I'm a full-stack Software Engineer. Based on Málaga, Spain."
+    "github": "JaysusM"
+  }
 }

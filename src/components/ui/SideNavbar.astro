@@ -1,0 +1,162 @@
+---
+import { Icon } from "astro-icon/components";
+import ThemeToggle from "./ThemeToggle.astro";
+import Title from "./Title.astro";
+import { github, email, name } from "../../information.json";
+---
+
+<aside>
+  <slot />
+  <div class="title">
+    <Title />
+  </div>
+  <nav class="main-navbar">
+    <a href="/"><Icon name="home" /> Home</a>
+    <a href="#projects"><Icon name="library" /> Projects</a>
+    <a href=`https://github.com/${github}` target="_blank"
+      ><Icon name="code" /> GitHub</a
+    >
+  </nav>
+  <nav class="profile-settings">
+    <a class="main-option"
+      ><Icon name="settings" /> Settings<Icon name="arrow_down" /></a
+    >
+    <a class="suboption"><ThemeToggle /></a>
+    <a href=`mailto:${email}`><Icon name="help" /> Contact</a>
+  </nav>
+  <div class="profile">
+    <img src="/memoji-thumbsup.png" alt="Profile Picture" />
+    <div class="profile-info">
+      <h3>{name}</h3>
+      <p>{email}</p>
+    </div>
+  </div>
+</aside>
+<style>
+  aside {
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: min(300px, 20vw);
+    max-width: 25vw;
+    border-right: 1px solid var(--accent-light);
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+  }
+
+  nav a {
+    font-size: 1.05rem;
+    margin-bottom: 0.8rem;
+  }
+
+  nav a svg {
+    min-height: 1.25rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-right: 5px;
+  }
+
+  .profile-settings {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+
+  a.main-option {
+    display: flex;
+    flex-direction: row;
+  }
+
+  a.main-option svg:first-of-type {
+    margin-right: 10px;
+  }
+
+  a.main-option svg:last-of-type {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .profile-settings > a.suboption {
+    margin-left: 1.85rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 0.3rem;
+  }
+
+  .profile > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile > .profile-info {
+    margin-left: 0.5rem;
+    max-width: calc(100% - 3.6rem);
+  }
+
+  .profile > .profile-info > h3 {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .profile > .profile-info > p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--accent-light);
+  }
+
+  .profile > .profile-info > h3,
+  .profile > .profile-info > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  .title > svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  @media (width <= 900px) {
+    aside {
+      min-width: min(600px, 100vw);
+      max-width: min(600px, 100vw);
+      border-right: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .title {
+      display: none;
+    }
+  }
+
+  @media (width <= 600px) {
+    .title {
+      display: block;
+    }
+  }
+</style>
