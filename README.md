@@ -1,54 +1,44 @@
-# Astro Starter Kit: Basics
+# Personal Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is my personal portfolio, designed to showcase my work and skills. The interface is inspired by Facebook and the design idea was taken from [Dribbble](https://dribbble.com/shots/23324524-Online-portfolio-Untitled-UI). The project is built using [Astro](https://astro.build/).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Clean and modern design
+- Responsive layout
+- Showcases projects and skills
+- Contact information
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Getting Started
 
-## 🚀 Project Structure
+To get a local copy up and running, follow these simple steps.
 
-Inside of your Astro project, you'll see the following folders and files:
+### Prerequisites
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Make sure you have [Node.js](https://nodejs.org/) installed.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Installation
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jaysusm/jaysusm-portfolio.git
+   ````
+2. Install NPM packages
+    ```sh
+    npm install
+    ```
+3. Start the development server
+    ```sh
+    npm run astro dev
+    ```
+## Usage
 
-Any static assets, like images, can be placed in the `public/` directory.
+You can customize the portfolio by editing the content in the `src/information.json` directory. Update the information in the JSON files and modify the components as needed.
 
-## 🧞 Commands
+## License
 
-All commands are run from the root of the project, from a terminal:
+Distributed under the MIT License. See `LICENSE` for more information.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Contact
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Jesús Martín - [jmartinruiz26@gmail.com](mailto:jmartinruiz26@gmail.com)
