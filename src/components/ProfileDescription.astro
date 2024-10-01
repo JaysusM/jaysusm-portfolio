@@ -8,7 +8,7 @@ const aboutLines = about.split("\n");
   <div class="profile-about">
     <h3>About Me</h3>
     <div>
-      {aboutLines.map((line) => <p set:html={line}/>)}
+      {aboutLines.map((line) => <p set:html={line} />)}
     </div>
   </div>
   <div class="profile-chips">
@@ -47,7 +47,7 @@ const aboutLines = about.split("\n");
     margin: 0 2rem;
   }
   .profile-about {
-    max-width: min(100%, 800px);    
+    max-width: min(100%, 800px);
     min-width: 600px;
   }
   .profile-chips {
@@ -55,7 +55,7 @@ const aboutLines = about.split("\n");
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    grid-template-rows: repeat(auto-fill, 100px)
+    grid-template-rows: repeat(auto-fill, 100px);
   }
   .profile-chip {
     display: flex;

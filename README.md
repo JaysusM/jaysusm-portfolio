@@ -22,15 +22,16 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 1. Clone the repo
    ```sh
    git clone https://github.com/jaysusm/jaysusm-portfolio.git
-   ````
+   ```
 2. Install NPM packages
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 3. Start the development server
-    ```sh
-    npm run astro dev
-    ```
+   ```sh
+   npm run astro dev
+   ```
+
 ## Usage
 
 You can customize the portfolio by editing the content in the `src/information.json` directory. Update the information in the JSON files and modify the components as needed.

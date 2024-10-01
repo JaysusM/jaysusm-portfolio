@@ -15,7 +15,16 @@
       "company": "Institutional Investment Group (2IG)",
       "description": "Developed backend solutions with <b>Node.js</b> and <b>GraphQL</b>, created microservices with <b>C#</b> and <b>RabbitMQ</b>, contributed to the frontend using <b>React</b>, implemented testing for software quality and integrated external APIs, deployed applications with <b>Docker</b>, managed CI/CD pipelines in <b>GitLab</b>, and utilized <b>Terraform</b> for infrastructure automation.",
       "image": "2ig.jpeg",
-      "techIcons": ["Node", "GraphQL", "React", "Docker", "GitLab", "Terraform", "C#", "RabbitMQ"]
+      "techIcons": [
+        "Node",
+        "GraphQL",
+        "React",
+        "Docker",
+        "GitLab",
+        "Terraform",
+        "C#",
+        "RabbitMQ"
+      ]
     },
     {
       "title": "Software Engineer",
