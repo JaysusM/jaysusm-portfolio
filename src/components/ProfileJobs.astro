@@ -1,0 +1,23 @@
+---
+import JobCard from './JobCard.astro'
+import { jobs } from '../information.json';
+---
+<section>
+    <h3>Experience</h3>
+    <div class="profile-jobs">
+      {jobs.map((job) => (
+          <JobCard {...job} />
+      ))}
+    </di>
+</section>
+<style>
+    section {
+        margin: 0 2rem;
+    }
+    .profile-jobs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+</style>

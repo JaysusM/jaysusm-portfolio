@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/ui/Navbar.astro";
 import ProfileHeader from "@components/ProfileHeader.astro";
 import ProfileDescription from "@components/ProfileDescription.astro";
+import ProfileJobs from "@components/ProfileJobs.astro";
 ---
 
 <Layout>
@@ -11,6 +12,7 @@ import ProfileDescription from "@components/ProfileDescription.astro";
     <ProfileHeader />
     <div class="separator"></div>
     <ProfileDescription />
+    <ProfileJobs />
   </main>
 </Layout>
 <style>
@@ -18,6 +20,9 @@ import ProfileDescription from "@components/ProfileDescription.astro";
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    max-height: 100vh;
+    padding-bottom: 2rem;
   }
   .separator {
     height: 1px;

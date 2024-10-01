@@ -1,0 +1,58 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+}
+
+const { title, subtitle, description, image } = Astro.props;
+---
+<div class="card-container">
+    <img src={image} alt="Card Image" />
+    <div class="card-info">
+        <h3>{title}</h3>
+        <h4>{subtitle}</h4>
+    </div>
+    <p set:html={description}/>
+    <slot />
+</div>
+<style>
+    .card-container {
+        display: grid;
+        grid-template-columns: calc(75px + 1rem) 1fr;
+        gap: 0.5rem;
+        padding: 1rem;
+        background-color: var(--main);
+        border-radius: 10px;
+        border: 1px solid var(--accent-light);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-container h3, .card-container h4, .card-container p {
+        margin: 0;
+    }
+
+    .card-container h4 {
+        font-weight: 300;
+    }
+
+    .card-container img {
+        width: 60px;
+        height: 60px;
+        margin: 0.5rem;
+    }
+
+    .card-container p {
+        text-align: justify;
+        grid-column: span 2;
+        padding: 0 0.6rem;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 0.75rem;
+    }
+</style>
