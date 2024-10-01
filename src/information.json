@@ -12,7 +12,7 @@
   "jobs": [
     {
       "title": "Senior/Mid Software Engineer",
-      "company": "Institutional Investment Group (2IG)",
+      "company": "2IG | May 2023 - Present",
       "description": "Developed backend solutions with <b>Node.js</b> and <b>GraphQL</b>, created microservices with <b>C#</b> and <b>RabbitMQ</b>, contributed to the frontend using <b>React</b>, implemented testing for software quality and integrated external APIs, deployed applications with <b>Docker</b>, managed CI/CD pipelines in <b>GitLab</b>, and utilized <b>Terraform</b> for infrastructure automation.",
       "image": "2ig.jpeg",
       "techIcons": [
@@ -28,21 +28,21 @@
     },
     {
       "title": "Software Engineer",
-      "company": "FROGED",
+      "company": "FROGED | December 2020 - May 2023",
       "description": "Developed backend solutions with <b>Node.js</b> and <b>Express.js</b>, implemented <b>MongoDB</b> for data storage, contributed to the frontend using <b>React</b> and <b>Redux</b> for state management, collaborated with teams to ensure project deadlines were met.",
       "image": "froged.jpeg",
       "techIcons": ["Node", "React", "Express", "MongoDB", "Redux"]
     },
     {
       "title": "Software Engineer",
-      "company": "Saal Digital",
+      "company": "Saal Digital | March 2020 - December 2020",
       "description": "Created web applications using <b>Angular</b> for dynamic user interfaces, developed RESTful APIs with <b>Node.js</b>, managed deployments with <b>AWS</b>, and set up CI/CD pipelines using <b>GitLab</b>, integrated external services to enhance application functionality.",
       "image": "saal.jpeg",
       "techIcons": ["Node", "Angular", "AWS", "GitLab"]
     },
     {
       "title": "Web Developer Intern",
-      "company": "Realcore Spain",
+      "company": "Realcore Spain | July 2019 - September 2019",
       "description": "Assisted in developing web and mobile applications using <b>Angular</b> with <b>Ionic</b> and <b>Node.js</b>, supported backend development with <b>Express.js</b> and <b>MongoDB</b>, collaborated with the team to deliver features on time.",
       "image": "realcore.jpeg",
       "techIcons": ["Angular", "Node", "Express", "MongoDB", "Ionic"]
