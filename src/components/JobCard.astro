@@ -24,9 +24,11 @@ const { title, description, company, image, techIcons } = Astro.props;
 </Card>
 <style>
     .tech-icons {
+        grid-column: span 2;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+        flex-wrap: wrap;
         gap: 0.5rem;
         margin: 0.75rem 0.5rem;
     }
