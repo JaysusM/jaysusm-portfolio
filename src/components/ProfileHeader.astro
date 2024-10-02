@@ -38,6 +38,7 @@ import { name, mainDescription } from "../information.json";
   .profile-info {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -57,6 +58,8 @@ import { name, mainDescription } from "../information.json";
   .profile-info > .profile-image > img {
     width: 175px;
     height: 175px;
+    max-height: 20vh;
+    max-width: 20vh;
     border-radius: 50%;
     margin-top: -50px;
     margin-right: 1rem;
@@ -91,5 +94,18 @@ import { name, mainDescription } from "../information.json";
   .profile-info > .profile-contact a {
     font-weight: 400;
     font-size: 1rem;
+  }
+
+  @media (width <= 1130px) {
+    .profile-contact {
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+    }
+
+    .banner {
+      max-height: 20vh;
+    }
   }
 </style>

@@ -43,12 +43,13 @@ const aboutLines = about.split("\n");
   .profile-description {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 4rem;
     margin: 0 2rem;
   }
   .profile-about {
     max-width: min(100%, 800px);
-    min-width: 600px;
+    min-width: 500px;
   }
   .profile-chips {
     min-width: 225px;
@@ -91,5 +92,30 @@ const aboutLines = about.split("\n");
   }
   h5 {
     margin-bottom: 0;
+  }
+
+  @media (1455px <= width <= 1700px) {
+    .profile-chips {
+      grid-template-rows: repeat(auto-fill, minmax(75px, 1fr));
+    }
+  }
+
+  @media (width <= 1455px) {
+    .profile-about {
+      min-width: 100%;
+      text-align: justify;
+    }
+
+    .profile-description {
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (width <= 550px) {
+    .profile-chips {
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      grid-template-rows: repeat(auto-fill, 75px);
+    }
   }
 </style>

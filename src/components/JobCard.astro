@@ -67,4 +67,33 @@ const { title, description, company, image, techIcons } = Astro.props;
     .icon-wrapper:hover .tooltip {
         display: block;
     }
+
+
+  @media (1610px <= width <= 1710px) {
+    .tech-icons svg {
+        max-width: 25px;
+        max-height: 25px;
+        min-width: 25px;
+        min-height: 25px;
+    }
+  }
+
+  @media (1150px <= width <= 1230px) {
+    .tech-icons svg {
+        max-width: 20px;
+        max-height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+    }
+  }
+
+  @media (540px >= width) {
+    .tech-icons svg {
+        max-width: 20px;
+        max-height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+    }
+  }
+
 </style>
