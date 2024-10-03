@@ -1,27 +1,38 @@
 ---
+import { Icon } from "astro-icon/components";
 interface Props {
   title: string;
-  subtitle: string;
+  titleLink?: string;
+  subtitle?: string;
   description: string;
-  image: string;
+  image?: string;
 }
 
-const { title, subtitle, description, image } = Astro.props;
+const { title, titleLink, subtitle, description, image } = Astro.props;
 ---
 
 <div class="card-container">
-  <img src={image} alt="Card Image" />
+  {image && <img src={image} alt="Card Image" />}
   <div class="card-info">
-    <h3>{title}</h3>
-    <h4>{subtitle}</h4>
+    <h3>{titleLink ? <a class="title-link" href={titleLink} target="_blank">{title}<Icon name="arrow_right_up" /></a> : <a>{title}</a>}</h3>
+    {subtitle && <h4>{subtitle}</h4>}
   </div>
   <p set:html={description} />
   <slot />
 </div>
 <style>
+  h3 > a > svg {
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+  h3 > a.title-link:hover {
+    text-decoration: underline;
+  }
   .card-container {
     display: grid;
-    grid-template-columns: calc(75px + 1rem) 1fr;
+    grid-template-columns: calc(60px + 1rem) 1fr;
+    grid-template-rows: calc(60px + 1rem) 1fr auto;
     gap: 0.5rem;
     padding: 1rem;
     background-color: var(--main);

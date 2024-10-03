@@ -1,0 +1,39 @@
+---
+import CardWithTech from "./CardWithTech.astro";
+import Button from "./ui/Button.astro";
+import { projects } from "../information.json";
+---
+
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="profile-projects">
+    {
+      projects.map((project) => (
+        <CardWithTech
+          title={project.title}
+          titleLink={project.sourceCode}
+          subtitle={project.subtitle}
+          image={project.image}
+          description={project.description}
+          techIcons={project.techIcons}
+        />
+      ))
+    }
+  </div>
+</section>
+<style>
+  section {
+    margin: 0 2rem;
+  }
+  .profile-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  @media (width <= 500px) {
+    .profile-jobs {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

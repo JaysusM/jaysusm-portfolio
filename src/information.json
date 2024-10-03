@@ -9,6 +9,33 @@
     "email": "jmartinruiz26@gmail.com",
     "github": "JaysusM"
   },
+  "projects": [
+    {
+      "title": "Portfolio",
+      "subtitle": "Personal portfolio website",
+      "image": "/jaybook_portfolio.png",
+      "description": "This is my personal portfolio website, built with the <b>Astro</b> framework. It showcases my work, skills, and experience. The site is fully responsive, optimized for performance, and deployed on <b>Vercel</b>.",
+      "techIcons": ["Astro"],
+      "sourceCode": "https://github.com/JaysusM/jaysusm-portfolio"
+    },
+    {
+      "title": "NBA Go",
+      "subtitle": "NBA Livescoreboard mobile app",
+      "image": "https://raw.githubusercontent.com/JaysusM/NBA-Go/master/android/app/src/main/res/mipmap-xxxhdpi/nba_go.png",
+      "description": "NBA Go is a fan-made mobile app for real-time NBA scores, game schedules, player stats, and conference standings. It includes a player search feature with filters and career stats. Built with <b>Flutter</b>, it uses the <b>BLoC pattern</b> for state management, the <b>NBA API</b> for data, and <b>SQLite</b> to cache player data.",
+      "techIcons": ["Flutter", "Dart", "SQLite"],
+      "sourceCode": "https://github.com/JaysusM/NBA-Go"
+    },
+    {
+      "title": "Vid.io",
+      "image": "/vid_io.png",
+      "subtitle": "App for screen capture and clip sharing.",
+      "description": "VID.io is a webapp that enables users to capture and share screen recordings. It allows users to record their screen, store clips, and share them easily with others. The app is built with <b>Shadcn components</b> for a modern user interface, and uses <b>Auth0</b> for secure user authentication. Video clips are stored in <b>Amazon S3</b>, and the app uses <b>FFmpeg</b> for transcoding, ensuring that clips are in a shareable format.",
+      "techIcons": ["React", "AWS", "Tailwind", "Next", "MongoDB", "Auth0"],
+      "sourceCode": "https://github.com/JaysusM/vid.io",
+      "demo": "https://vid-io.vercel.app/"
+    }
+  ],
   "jobs": [
     {
       "title": "Senior/Mid Software Engineer",
@@ -29,16 +56,16 @@
     {
       "title": "Software Engineer",
       "company": "FROGED | December 2020 - May 2023",
-      "description": "Developed backend solutions with <b>Node.js</b> and <b>Express.js</b>, implemented <b>MongoDB</b> for data storage, contributed to the frontend using <b>React</b> and <b>Redux</b> for state management, collaborated with teams to ensure project deadlines were met.",
+      "description": "Developed backend solutions with <b>Node.js</b> and <b>Express.js</b> using <b>DDD</b> and <b>CQRS</b> patterns, implemented <b>MongoDB</b> for data storage, contributed to the frontend using <b>React</b> and <b>Redux</b> for state management, collaborated with teams to ensure project deadlines were met. Integrated <b>Google API</b> for calendars, and <b>WhatsApp</b>, <b>Twitter</b>, and <b>Facebook</b> APIs for communication.",
       "image": "froged.jpeg",
-      "techIcons": ["Node", "React", "Express", "MongoDB", "Redux"]
+      "techIcons": ["Node", "Angular", "Express", "MongoDB", "WhatsApp"]
     },
     {
       "title": "Software Engineer",
       "company": "Saal Digital | March 2020 - December 2020",
-      "description": "Created web applications using <b>Angular</b> for dynamic user interfaces, developed RESTful APIs with <b>Node.js</b>, managed deployments with <b>AWS</b>, and set up CI/CD pipelines using <b>GitLab</b>, integrated external services to enhance application functionality.",
+      "description": "Created web applications using <b>Angular</b> for dynamic user interfaces, developed RESTful APIs with <b>Node.js</b>, managed deployments with <b>AWS</b>, and set up CI/CD pipelines using <b>GitLab</b>. Used <b>Tailwind CSS</b> and <b>Webpack</b> to build the frontend and <b>Redux</b> to manage the application state. Integrated external services to enhance application functionality.",
       "image": "saal.jpeg",
-      "techIcons": ["Node", "Angular", "AWS", "GitLab"]
+      "techIcons": ["React", "Redux", "Tailwind", "AWS", "Webpack", "GitLab"]
     },
     {
       "title": "Web Developer Intern",

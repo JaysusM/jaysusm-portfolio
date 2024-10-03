@@ -50,6 +50,7 @@ const aboutLines = about.split("\n");
   .profile-about {
     max-width: min(100%, 800px);
     min-width: 500px;
+    width: clamp(500px, 50%, 800px);
   }
   .profile-chips {
     min-width: 225px;
@@ -100,7 +101,18 @@ const aboutLines = about.split("\n");
     }
   }
 
-  @media (width <= 1455px) {
+  @media (1250px <= width <= 1455px) {
+    .profile-about {
+      min-width: 70%;
+    }
+
+    .profile-chips {
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      grid-template-rows: repeat(auto-fill, 75px);
+    }
+  }
+
+  @media (width <= 1250px) {
     .profile-about {
       min-width: 100%;
       text-align: justify;

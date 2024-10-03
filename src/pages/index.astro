@@ -4,6 +4,7 @@ import Navbar from "@components/ui/Navbar.astro";
 import ProfileHeader from "@components/ProfileHeader.astro";
 import ProfileDescription from "@components/ProfileDescription.astro";
 import ProfileJobs from "@components/ProfileJobs.astro";
+import ProfileProjects from "@components/ProfileProjects.astro";
 ---
 
 <Layout title="Jesus Martín - Portfolio">
@@ -12,6 +13,7 @@ import ProfileJobs from "@components/ProfileJobs.astro";
     <ProfileHeader />
     <div class="separator"></div>
     <ProfileDescription />
+    <ProfileProjects />
     <ProfileJobs />
   </main>
 </Layout>
@@ -23,10 +25,11 @@ import ProfileJobs from "@components/ProfileJobs.astro";
     overflow-y: auto;
     max-height: 100vh;
     padding-bottom: 2rem;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
   }
+  
   .separator {
-    height: 1px;
-    background: var(--accent-light);
     margin: 2rem;
   }
 

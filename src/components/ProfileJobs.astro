@@ -1,12 +1,22 @@
 ---
-import JobCard from "./JobCard.astro";
+import CardWithTech from "./CardWithTech.astro";
 import { jobs } from "../information.json";
 ---
 
 <section>
   <h3>Experience</h3>
   <div class="profile-jobs">
-    {jobs.map((job) => <JobCard {...job} />)}
+    {
+      jobs.map((job) => (
+        <CardWithTech
+          title={job.title}
+          description={job.description}
+          image={job.image}
+          subtitle={job.company}
+          techIcons={job.techIcons}
+        />
+      ))
+    }
   </div>
 </section>
 <style>
