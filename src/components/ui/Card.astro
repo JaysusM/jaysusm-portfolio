@@ -14,7 +14,18 @@ const { title, titleLink, subtitle, description, image } = Astro.props;
 <div class="card-container">
   {image && <img src={image} alt="Card Image" />}
   <div class="card-info">
-    <h3>{titleLink ? <a class="title-link" href={titleLink} target="_blank">{title}<Icon name="arrow_right_up" /></a> : <a>{title}</a>}</h3>
+    <h3>
+      {
+        titleLink ? (
+          <a class="title-link" href={titleLink} target="_blank">
+            {title}
+            <Icon name="arrow_right_up" />
+          </a>
+        ) : (
+          <a>{title}</a>
+        )
+      }
+    </h3>
     {subtitle && <h4>{subtitle}</h4>}
   </div>
   <p set:html={description} />
@@ -39,6 +50,7 @@ const { title, titleLink, subtitle, description, image } = Astro.props;
     border-radius: 10px;
     border: 1px solid var(--accent-light);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: min(100%, 400px);
   }
 
   .card-container h3,

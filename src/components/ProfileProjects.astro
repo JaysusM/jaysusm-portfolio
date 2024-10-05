@@ -1,12 +1,12 @@
 ---
 import CardWithTech from "./CardWithTech.astro";
-import Button from "./ui/Button.astro";
+import Carousel from "./ui/Carousel";
 import { projects } from "../information.json";
 ---
 
 <section id="projects">
   <h3>Projects</h3>
-  <div class="profile-projects">
+  <Carousel>
     {
       projects.map((project) => (
         <CardWithTech
@@ -19,21 +19,10 @@ import { projects } from "../information.json";
         />
       ))
     }
-  </div>
+  </Carousel>
 </section>
 <style>
   section {
     margin: 0 2rem;
-  }
-  .profile-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  @media (width <= 500px) {
-    .profile-projects {
-      grid-template-columns: 1fr;
-    }
   }
 </style>

@@ -15,7 +15,7 @@
       "subtitle": "Personal portfolio website",
       "image": "/jaybook_portfolio.png",
       "description": "This is my personal portfolio website, built with the <b>Astro</b> framework. It showcases my work, skills, and experience. The site is fully responsive, optimized for performance, and deployed on <b>Vercel</b>.",
-      "techIcons": ["Astro"],
+      "techIcons": ["Astro", "React"],
       "sourceCode": "https://github.com/JaysusM/jaysusm-portfolio"
     },
     {
