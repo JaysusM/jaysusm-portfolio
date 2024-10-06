@@ -6,7 +6,7 @@ import { projects } from "../information.json";
 
 <section id="projects">
   <h3>Projects</h3>
-  <Carousel>
+  <Carousel client:load>
     {
       projects.map((project) => (
         <CardWithTech

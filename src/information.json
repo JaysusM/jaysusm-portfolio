@@ -14,14 +14,14 @@
       "title": "Portfolio",
       "subtitle": "Personal portfolio website",
       "image": "/jaybook_portfolio.png",
-      "description": "This is my personal portfolio website, built with the <b>Astro</b> framework. It showcases my work, skills, and experience. The site is fully responsive, optimized for performance, and deployed on <b>Vercel</b>.",
+      "description": "This is my personal portfolio website, built with the <b>Astro</b> framework. It showcases my work, skills, and experience. The site is fully responsive, optimized for performance, and deployed on <b>Vercel</b>. It also uses some <b>Astro Islands</b> for the carousel using <b>React</b> so some components can run on the client's side.",
       "techIcons": ["Astro", "React"],
       "sourceCode": "https://github.com/JaysusM/jaysusm-portfolio"
     },
     {
       "title": "NBA Go",
-      "subtitle": "NBA Livescoreboard mobile app",
-      "image": "https://raw.githubusercontent.com/JaysusM/NBA-Go/master/android/app/src/main/res/mipmap-xxxhdpi/nba_go.png",
+      "subtitle": "Livescoreboard mobile app",
+      "image": "/nba_go.png",
       "description": "NBA Go is a fan-made mobile app for real-time NBA scores, game schedules, player stats, and conference standings. It includes a player search feature with filters and career stats. Built with <b>Flutter</b>, it uses the <b>BLoC pattern</b> for state management, the <b>NBA API</b> for data, and <b>SQLite</b> to cache player data.",
       "techIcons": ["Flutter", "Dart", "SQLite"],
       "sourceCode": "https://github.com/JaysusM/NBA-Go"
@@ -55,21 +55,21 @@
     },
     {
       "title": "Software Engineer",
-      "company": "FROGED | December 2020 - May 2023",
+      "company": "FROGED | Dec 2020 - May 2023",
       "description": "Developed backend solutions with <b>Node.js</b> and <b>Express.js</b> using <b>DDD</b> and <b>CQRS</b> patterns, implemented <b>MongoDB</b> for data storage, contributed to the frontend using <b>React</b> and <b>Redux</b> for state management, collaborated with teams to ensure project deadlines were met. Integrated <b>Google API</b> for calendars, and <b>WhatsApp</b>, <b>Twitter</b>, and <b>Facebook</b> APIs for communication.",
       "image": "froged.jpeg",
       "techIcons": ["Node", "Angular", "Express", "MongoDB", "WhatsApp"]
     },
     {
       "title": "Software Engineer",
-      "company": "Saal Digital | March 2020 - December 2020",
+      "company": "Saal Digital | Mar 2020 - Dec 2020",
       "description": "Created web applications using <b>Angular</b> for dynamic user interfaces, developed RESTful APIs with <b>Node.js</b>, managed deployments with <b>AWS</b>, and set up CI/CD pipelines using <b>GitLab</b>. Used <b>Tailwind CSS</b> and <b>Webpack</b> to build the frontend and <b>Redux</b> to manage the application state. Integrated external services to enhance application functionality.",
       "image": "saal.jpeg",
       "techIcons": ["React", "Redux", "Tailwind", "AWS", "Webpack", "GitLab"]
     },
     {
-      "title": "Web Developer Intern",
-      "company": "Realcore Spain | July 2019 - September 2019",
+      "title": "Web Dev Intern",
+      "company": "RealCore Spain | Jul 2019 - Sep 2019",
       "description": "Assisted in developing web and mobile applications using <b>Angular</b> with <b>Ionic</b> and <b>Node.js</b>, supported backend development with <b>Express.js</b> and <b>MongoDB</b>, collaborated with the team to deliver features on time.",
       "image": "realcore.jpeg",
       "techIcons": ["Angular", "Node", "Express", "MongoDB", "Ionic"]

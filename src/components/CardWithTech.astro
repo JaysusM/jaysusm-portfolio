@@ -9,10 +9,18 @@ interface Props {
   image?: string;
   subtitle?: string;
   techIcons: string[];
+  isHoverable?: boolean;
 }
 
-const { title, titleLink, description, subtitle, image, techIcons } =
-  Astro.props;
+const {
+  title,
+  titleLink,
+  description,
+  subtitle,
+  image,
+  techIcons,
+  isHoverable,
+} = Astro.props;
 ---
 
 <Card
@@ -21,6 +29,7 @@ const { title, titleLink, description, subtitle, image, techIcons } =
   description={description}
   image={image}
   subtitle={subtitle}
+  isHoverable={isHoverable}
 >
   <div class="tech-icons">
     {
@@ -52,7 +61,7 @@ const { title, titleLink, description, subtitle, image, techIcons } =
 
   .icon-wrapper {
     padding: 0.5rem;
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
     border-radius: 0.25rem;
     position: relative;
     display: flex;
@@ -60,10 +69,6 @@ const { title, titleLink, description, subtitle, image, techIcons } =
     align-items: center;
     flex: auto;
     max-width: 50%;
-  }
-
-  .icon-wrapper:hover {
-    background-color: #e0e0e0;
   }
 
   .tech-icons svg {
