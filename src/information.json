@@ -11,6 +11,14 @@
   },
   "projects": [
     {
+      "title": "Triplan AI",
+      "subtitle": "AI Trip planner assistant",
+      "image": "/tripplan-ai.svg",
+      "description": "This project is a web application that provides suggestions for places and activities in various cities. It consists of a <b>Flask-based API</b> and a <b>React frontend</b>. The API leverages the <b>Llama model</b> for generating responses. The main goal is to create a schedule of places to visit in a given city and to serve as a learning experience for working with <b>Large Language Models (LLMs)</b> and <b>AI</b>.",
+      "techIcons": ["AI", "Flask", "React"],
+      "sourceCode": "https://github.com/JaysusM/triplan-ai"
+    },
+    {
       "title": "Portfolio",
       "subtitle": "Personal portfolio website",
       "image": "/jaybook_portfolio.png",
@@ -62,7 +70,7 @@
     },
     {
       "title": "Software Engineer",
-      "company": "Saal Digital | Mar 2020 - Dec 2020",
+      "company": "Saal Digital | Dec 2019 - Dec 2020",
       "description": "Created web applications using <b>Angular</b> for dynamic user interfaces, developed RESTful APIs with <b>Node.js</b>, managed deployments with <b>AWS</b>, and set up CI/CD pipelines using <b>GitLab</b>. Used <b>Tailwind CSS</b> and <b>Webpack</b> to build the frontend and <b>Redux</b> to manage the application state. Integrated external services to enhance application functionality.",
       "image": "saal.jpeg",
       "techIcons": ["React", "Redux", "Tailwind", "AWS", "Webpack", "GitLab"]
